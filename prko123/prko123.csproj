@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0416CD39-6100-413B-89AD-826DA83F5279}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>prko123</RootNamespace>
+    <AssemblyName>prko123</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abituent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abituent.Designer.cs">
+      <DependentUpon>Abituent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAbiturient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAbiturient.Designer.cs">
+      <DependentUpon>AddAbiturient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="City.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City.Designer.cs">
+      <DependentUpon>City.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctype.Designer.cs">
+      <DependentUpon>Doctype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty.Designer.cs">
+      <DependentUpon>Faculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Institution.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Institution.Designer.cs">
+      <DependentUpon>Institution.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Language.Designer.cs">
+      <DependentUpon>Language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nationality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nationality.Designer.cs">
+      <DependentUpon>Nationality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parents.Designer.cs">
+      <DependentUpon>Parents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRKODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PRKODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelationDegree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelationDegree.Designer.cs">
+      <DependentUpon>RelationDegree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Speciality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Speciality.Designer.cs">
+      <DependentUpon>Speciality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Street.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Street.Designer.cs">
+      <DependentUpon>Street.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Abituent.resx">
+      <DependentUpon>Abituent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAbiturient.resx">
+      <DependentUpon>AddAbiturient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="City.resx">
+      <DependentUpon>City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctype.resx">
+      <DependentUpon>Doctype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty.resx">
+      <DependentUpon>Faculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Institution.resx">
+      <DependentUpon>Institution.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Language.resx">
+      <DependentUpon>Language.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nationality.resx">
+      <DependentUpon>Nationality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parents.resx">
+      <DependentUpon>Parents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RelationDegree.resx">
+      <DependentUpon>RelationDegree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Speciality.resx">
+      <DependentUpon>Speciality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Street.resx">
+      <DependentUpon>Street.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PRKODataSet.xsc">
+      <DependentUpon>PRKODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PRKODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PRKODataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PRKODataSet.xss">
+      <DependentUpon>PRKODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
