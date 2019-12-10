@@ -58,43 +58,43 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.nationalitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pRKODataSet = new prko123.PRKODataSet();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.pRKODataSet = new prko123.PRKODataSet();
-            this.nationalitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nationalitiesTableAdapter = new prko123.PRKODataSetTableAdapters.NationalitiesTableAdapter();
-            this.citiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.citiesTableAdapter = new prko123.PRKODataSetTableAdapters.CitiesTableAdapter();
-            this.streetsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.streetsTableAdapter = new prko123.PRKODataSetTableAdapters.StreetsTableAdapter();
-            this.foreignlanguageBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.foreign_languageTableAdapter = new prko123.PRKODataSetTableAdapters.Foreign_languageTableAdapter();
             this.facultiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.facultiesTableAdapter = new prko123.PRKODataSetTableAdapters.FacultiesTableAdapter();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.speciallitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.speciallitiesTableAdapter = new prko123.PRKODataSetTableAdapters.SpeciallitiesTableAdapter();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.institutionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.institutionsTableAdapter = new prko123.PRKODataSetTableAdapters.InstitutionsTableAdapter();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.doctypesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.citiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.streetsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.foreignlanguageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nationalitiesTableAdapter = new prko123.PRKODataSetTableAdapters.NationalitiesTableAdapter();
+            this.citiesTableAdapter = new prko123.PRKODataSetTableAdapters.CitiesTableAdapter();
+            this.streetsTableAdapter = new prko123.PRKODataSetTableAdapters.StreetsTableAdapter();
+            this.foreign_languageTableAdapter = new prko123.PRKODataSetTableAdapters.Foreign_languageTableAdapter();
+            this.facultiesTableAdapter = new prko123.PRKODataSetTableAdapters.FacultiesTableAdapter();
+            this.speciallitiesTableAdapter = new prko123.PRKODataSetTableAdapters.SpeciallitiesTableAdapter();
+            this.institutionsTableAdapter = new prko123.PRKODataSetTableAdapters.InstitutionsTableAdapter();
             this.doctypesTableAdapter = new prko123.PRKODataSetTableAdapters.DoctypesTableAdapter();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nationalitiesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.citiesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.streetsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foreignlanguageBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facultiesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciallitiesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.institutionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doctypesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.citiesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.streetsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foreignlanguageBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -342,6 +342,16 @@
             this.comboBox2.TabIndex = 29;
             this.comboBox2.ValueMember = "Nationality";
             // 
+            // nationalitiesBindingSource
+            // 
+            this.nationalitiesBindingSource.DataMember = "Nationalities";
+            this.nationalitiesBindingSource.DataSource = this.pRKODataSet;
+            // 
+            // pRKODataSet
+            // 
+            this.pRKODataSet.DataSetName = "PRKODataSet";
+            this.pRKODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(114, 149);
@@ -360,6 +370,11 @@
             this.comboBox3.TabIndex = 31;
             this.comboBox3.ValueMember = "Faculty";
             // 
+            // facultiesBindingSource
+            // 
+            this.facultiesBindingSource.DataMember = "Faculties";
+            this.facultiesBindingSource.DataSource = this.pRKODataSet;
+            // 
             // comboBox4
             // 
             this.comboBox4.DataSource = this.speciallitiesBindingSource;
@@ -370,6 +385,11 @@
             this.comboBox4.Size = new System.Drawing.Size(121, 21);
             this.comboBox4.TabIndex = 32;
             this.comboBox4.ValueMember = "Speciality";
+            // 
+            // speciallitiesBindingSource
+            // 
+            this.speciallitiesBindingSource.DataMember = "Speciallities";
+            this.speciallitiesBindingSource.DataSource = this.pRKODataSet;
             // 
             // comboBox5
             // 
@@ -382,6 +402,11 @@
             this.comboBox5.TabIndex = 33;
             this.comboBox5.ValueMember = "Institution";
             // 
+            // institutionsBindingSource
+            // 
+            this.institutionsBindingSource.DataMember = "Institutions";
+            this.institutionsBindingSource.DataSource = this.pRKODataSet;
+            // 
             // comboBox6
             // 
             this.comboBox6.DataSource = this.doctypesBindingSource;
@@ -392,6 +417,11 @@
             this.comboBox6.Size = new System.Drawing.Size(121, 21);
             this.comboBox6.TabIndex = 34;
             this.comboBox6.ValueMember = "Doctype";
+            // 
+            // doctypesBindingSource
+            // 
+            this.doctypesBindingSource.DataMember = "Doctypes";
+            this.doctypesBindingSource.DataSource = this.pRKODataSet;
             // 
             // comboBox7
             // 
@@ -404,6 +434,11 @@
             this.comboBox7.TabIndex = 35;
             this.comboBox7.ValueMember = "City";
             // 
+            // citiesBindingSource
+            // 
+            this.citiesBindingSource.DataMember = "Cities";
+            this.citiesBindingSource.DataSource = this.pRKODataSet;
+            // 
             // comboBox8
             // 
             this.comboBox8.DataSource = this.streetsBindingSource;
@@ -414,6 +449,11 @@
             this.comboBox8.Size = new System.Drawing.Size(121, 21);
             this.comboBox8.TabIndex = 36;
             this.comboBox8.ValueMember = "Street";
+            // 
+            // streetsBindingSource
+            // 
+            this.streetsBindingSource.DataMember = "Streets";
+            this.streetsBindingSource.DataSource = this.pRKODataSet;
             // 
             // comboBox9
             // 
@@ -426,78 +466,38 @@
             this.comboBox9.TabIndex = 37;
             this.comboBox9.ValueMember = "Language";
             // 
-            // pRKODataSet
-            // 
-            this.pRKODataSet.DataSetName = "PRKODataSet";
-            this.pRKODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nationalitiesBindingSource
-            // 
-            this.nationalitiesBindingSource.DataMember = "Nationalities";
-            this.nationalitiesBindingSource.DataSource = this.pRKODataSet;
-            // 
-            // nationalitiesTableAdapter
-            // 
-            this.nationalitiesTableAdapter.ClearBeforeFill = true;
-            // 
-            // citiesBindingSource
-            // 
-            this.citiesBindingSource.DataMember = "Cities";
-            this.citiesBindingSource.DataSource = this.pRKODataSet;
-            // 
-            // citiesTableAdapter
-            // 
-            this.citiesTableAdapter.ClearBeforeFill = true;
-            // 
-            // streetsBindingSource
-            // 
-            this.streetsBindingSource.DataMember = "Streets";
-            this.streetsBindingSource.DataSource = this.pRKODataSet;
-            // 
-            // streetsTableAdapter
-            // 
-            this.streetsTableAdapter.ClearBeforeFill = true;
-            // 
             // foreignlanguageBindingSource
             // 
             this.foreignlanguageBindingSource.DataMember = "Foreign_language";
             this.foreignlanguageBindingSource.DataSource = this.pRKODataSet;
             // 
+            // nationalitiesTableAdapter
+            // 
+            this.nationalitiesTableAdapter.ClearBeforeFill = true;
+            // 
+            // citiesTableAdapter
+            // 
+            this.citiesTableAdapter.ClearBeforeFill = true;
+            // 
+            // streetsTableAdapter
+            // 
+            this.streetsTableAdapter.ClearBeforeFill = true;
+            // 
             // foreign_languageTableAdapter
             // 
             this.foreign_languageTableAdapter.ClearBeforeFill = true;
-            // 
-            // facultiesBindingSource
-            // 
-            this.facultiesBindingSource.DataMember = "Faculties";
-            this.facultiesBindingSource.DataSource = this.pRKODataSet;
             // 
             // facultiesTableAdapter
             // 
             this.facultiesTableAdapter.ClearBeforeFill = true;
             // 
-            // speciallitiesBindingSource
-            // 
-            this.speciallitiesBindingSource.DataMember = "Speciallities";
-            this.speciallitiesBindingSource.DataSource = this.pRKODataSet;
-            // 
             // speciallitiesTableAdapter
             // 
             this.speciallitiesTableAdapter.ClearBeforeFill = true;
             // 
-            // institutionsBindingSource
-            // 
-            this.institutionsBindingSource.DataMember = "Institutions";
-            this.institutionsBindingSource.DataSource = this.pRKODataSet;
-            // 
             // institutionsTableAdapter
             // 
             this.institutionsTableAdapter.ClearBeforeFill = true;
-            // 
-            // doctypesBindingSource
-            // 
-            this.doctypesBindingSource.DataMember = "Doctypes";
-            this.doctypesBindingSource.DataSource = this.pRKODataSet;
             // 
             // doctypesTableAdapter
             // 
@@ -518,6 +518,7 @@
             this.button1.TabIndex = 39;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -577,15 +578,15 @@
             this.Name = "AddAbiturient";
             this.Text = "AddAbiturient";
             this.Load += new System.EventHandler(this.AddAbiturient_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nationalitiesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.citiesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.streetsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foreignlanguageBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pRKODataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facultiesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.speciallitiesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.institutionsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doctypesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.citiesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.streetsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foreignlanguageBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

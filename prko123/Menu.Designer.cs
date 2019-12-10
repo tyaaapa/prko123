@@ -36,14 +36,14 @@
             this.абитуриентToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.городToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.улицаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.национальностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.иностранныйЯзыкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.типДокументаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.родителиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.учебныеЗаведенияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.факультетToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,22 +116,6 @@
             this.улицаToolStripMenuItem.Text = "Улица";
             this.улицаToolStripMenuItem.Click += new System.EventHandler(this.улицаToolStripMenuItem_Click);
             // 
-            // выходToolStripMenuItem
-            // 
-            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.выходToolStripMenuItem.Text = "Выход";
-            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(47, 148);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // национальностьToolStripMenuItem
             // 
             this.национальностьToolStripMenuItem.Name = "национальностьToolStripMenuItem";
@@ -173,6 +157,22 @@
             this.факультетToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.факультетToolStripMenuItem.Text = "Факультет";
             this.факультетToolStripMenuItem.Click += new System.EventHandler(this.факультетToolStripMenuItem_Click);
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(47, 148);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Menu
             // 

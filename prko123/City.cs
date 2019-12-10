@@ -34,5 +34,11 @@ namespace prko123
             dataGridView1.Rows.RemoveAt(dataGridView1.CurrentCell.RowIndex);
             citiesTableAdapter.Update(pRKODataSet.Cities);
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            CRUSHTEST ct = new CRUSHTEST();
+            ct.ShowDialog();
+        }
     }
 }

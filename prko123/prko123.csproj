@@ -64,6 +64,12 @@
     <Compile Include="City.Designer.cs">
       <DependentUpon>City.cs</DependentUpon>
     </Compile>
+    <Compile Include="CRUSHTEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUSHTEST.Designer.cs">
+      <DependentUpon>CRUSHTEST.cs</DependentUpon>
+    </Compile>
     <Compile Include="Doctype.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="City.resx">
       <DependentUpon>City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRUSHTEST.resx">
+      <DependentUpon>CRUSHTEST.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctype.resx">
       <DependentUpon>Doctype.cs</DependentUpon>
